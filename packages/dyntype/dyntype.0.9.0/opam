@@ -14,9 +14,10 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "dyntype"]]
+remove: ["ocamlfind" "remove" "dyntype"]
 depends: [
   "ocamlfind"
   "type_conv" {>= "108.07.00"}
   "camlp4"
 ]
+libraries: "dyntype"

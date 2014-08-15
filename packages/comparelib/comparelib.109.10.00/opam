@@ -4,9 +4,10 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "comparelib"]]
+remove: ["ocamlfind" "remove" "comparelib"]
 depends: [
   "camlp4"
   "ocamlfind"
   "type_conv" {= "109.10.00"}
 ]
+libraries: "comparelib"

@@ -4,9 +4,10 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "variantslib"]]
+remove: ["ocamlfind" "remove" "variantslib"]
 depends: [
   "camlp4"
   "ocamlfind"
   "type_conv" {= "109.13.00"}
 ]
+libraries: "variantslib"

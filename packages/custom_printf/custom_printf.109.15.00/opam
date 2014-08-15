@@ -4,7 +4,7 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "custom_printf"]]
+remove: ["ocamlfind" "remove" "custom_printf"]
 depends: [
   "camlp4"
   "ocamlfind"
@@ -12,3 +12,4 @@ depends: [
   "sexplib" {>= "109.15.00" & <= "109.20.00"}
   "pa_ounit" {>= "109.15.00" & <= "109.18.00"}
 ]
+libraries: "custom_printf"

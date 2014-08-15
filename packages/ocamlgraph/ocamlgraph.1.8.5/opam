@@ -7,7 +7,7 @@ authors: [
 ]
 homepage: "http://ocamlgraph.lri.fr/"
 license: "GNU Library General Public License version 2.1"
-doc: ["http://ocamlgraph.lri.fr/doc"]
+doc: "http://ocamlgraph.lri.fr/doc"
 tags: [
   "graph"
   "library"
@@ -23,9 +23,10 @@ build: [
   [make]
   [make "install-findlib"]
 ]
-remove: [["ocamlfind" "remove" "ocamlgraph"]]
-depends: ["ocamlfind"]
+remove: ["ocamlfind" "remove" "ocamlgraph"]
+depends: "ocamlfind"
 depopts: [
   "lablgtk"
   "conf-gnomecanvas"
 ]
+libraries: "ocamlgraph"

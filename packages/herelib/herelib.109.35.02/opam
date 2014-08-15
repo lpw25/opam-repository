@@ -4,7 +4,10 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "herelib"]]
-depends: ["camlp4"
-          "ocamlfind"]
+remove: ["ocamlfind" "remove" "herelib"]
+depends: [
+  "camlp4"
+  "ocamlfind"
+]
+libraries: "herelib"
 ocaml-version: [>= "4.00.0"]

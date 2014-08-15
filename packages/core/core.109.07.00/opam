@@ -4,7 +4,7 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "core"]]
+remove: ["ocamlfind" "remove" "core"]
 depends: [
   "camlp4"
   "ocamlfind"
@@ -18,6 +18,7 @@ depends: [
   "ounit"
   "comparelib" {= "109.07.00"}
 ]
+libraries: "core"
 patches: [
   "fix_META.patch"
   "disable_warn_error.patch"

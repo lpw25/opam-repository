@@ -4,7 +4,7 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "core"]]
+remove: ["ocamlfind" "remove" "core"]
 depends: [
   "camlp4"
   "ocamlfind"
@@ -18,5 +18,6 @@ depends: [
   "ounit"
   "comparelib" {= "108.08.00"}
 ]
-patches: ["fix_META.patch"]
+libraries: "core"
+patches: "fix_META.patch"
 ocaml-version: [< "4.00.0"]

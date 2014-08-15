@@ -4,7 +4,7 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "core"]]
+remove: ["ocamlfind" "remove" "core"]
 depends: [
   "camlp4"
   "ocamlfind"
@@ -17,4 +17,5 @@ depends: [
   "res"
   "ounit"
 ]
+libraries: "core"
 ocaml-version: [< "4.00.1"]

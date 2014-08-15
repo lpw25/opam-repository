@@ -6,9 +6,12 @@ build: [
   [make]
   [make "install"]
 ]
-patches: ["fix-arm-double-field.diff"]
-remove: [["ocamlfind" "remove" "bin_prot"]]
-depends: ["camlp4"
-          "ocamlfind"
-          "type_conv" {>= "109.53.00" & <= "109.60.01"}]
+remove: ["ocamlfind" "remove" "bin_prot"]
+depends: [
+  "camlp4"
+  "ocamlfind"
+  "type_conv" {>= "109.53.00" & <= "109.60.01"}
+]
+libraries: "bin_prot"
+patches: "fix-arm-double-field.diff"
 ocaml-version: [>= "4.00.0"]

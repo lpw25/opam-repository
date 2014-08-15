@@ -10,4 +10,8 @@ remove: [
   ["rm" "%{bin}%/optcomp-o"]
   ["rm" "%{bin}%/optcomp-r"]
 ]
-depends: ["ocamlfind" "camlp4"]
+depends: [
+  "ocamlfind"
+  "camlp4"
+]
+libraries: "optcomp"

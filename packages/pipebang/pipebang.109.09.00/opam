@@ -4,7 +4,10 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "pa_pipebang"]]
-depends: ["camlp4"
-          "ocamlfind"]
+remove: ["ocamlfind" "remove" "pa_pipebang"]
+depends: [
+  "camlp4"
+  "ocamlfind"
+]
+libraries: "pa_pipebang"
 ocaml-version: [>= "4.00.0"]

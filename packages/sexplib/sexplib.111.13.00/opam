@@ -9,7 +9,14 @@ remove: [
   ["ocamlfind" "remove" "sexplib_num"]
   ["ocamlfind" "remove" "sexplib_unix"]
 ]
-depends: ["camlp4"
-          "ocamlfind"
-          "type_conv" {= "111.13.00"}]
+depends: [
+  "camlp4"
+  "ocamlfind"
+  "type_conv" {= "111.13.00"}
+]
+libraries: [
+  "sexplib"
+  "sexplib_num"
+  "sexplib_unix"
+]
 ocaml-version: [>= "4.00.0"]
