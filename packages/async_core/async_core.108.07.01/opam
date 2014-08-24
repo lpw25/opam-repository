@@ -4,6 +4,9 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "async_core"]]
-depends: ["camlp4"
-          "core" {= "108.07.01"}]
+remove: ["ocamlfind" "remove" "async_core"]
+depends: [
+  "camlp4"
+  "core" {= "108.07.01"}
+]
+libraries: "async_core"

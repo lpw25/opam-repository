@@ -10,8 +10,9 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "dum"]]
+remove: ["ocamlfind" "remove" "dum"]
 depends: [
   "ocamlfind"
   "easy-format"
 ]
+libraries: "dum"

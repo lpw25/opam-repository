@@ -5,6 +5,8 @@ build: [
   [make]
   [make "install"]
 ]
-depends: ["camlp4"
-          "async" {>= "109.17.00" & <= "109.19.00"}]
+depends: [
+  "camlp4"
+  "async" {>= "109.17.00" & <= "109.19.00"}
+]
 os: ["linux"]

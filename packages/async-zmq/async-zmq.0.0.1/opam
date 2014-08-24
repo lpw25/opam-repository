@@ -1,18 +1,14 @@
 opam-version: "1"
 maintainer: "rudi.grinberg@gmail.com"
-authors: [ "Rudi Grinberg" ]
-license: "MIT"
+authors: "Rudi Grinberg"
 homepage: "https://github.com/rgrinberg/asynz-zmq"
-
+license: "MIT"
 build: [
   [make "configure-no-tests"]
   [make "build"]
   [make "install"]
 ]
-
-remove: [
-  ["ocamlfind" "remove" "async_zmq"]
-]
+remove: ["ocamlfind" "remove" "async_zmq"]
 depends: [
   "async"
   "sexplib"
@@ -21,3 +17,4 @@ depends: [
   "ocamlfind"
   "oasis"
 ]
+libraries: "async_zmq"

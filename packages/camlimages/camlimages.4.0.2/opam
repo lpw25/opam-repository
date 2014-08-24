@@ -11,9 +11,10 @@ build: [
   ["omake"]
   ["omake" "install"]
 ]
-remove: [["ocamlfind" "remove" "camlimages"]]
+remove: ["ocamlfind" "remove" "camlimages"]
 depends: [
   "ocamlfind"
   "omake"
 ]
-depopts: ["lablgtk"]
+depopts: "lablgtk"
+libraries: "camlimages"

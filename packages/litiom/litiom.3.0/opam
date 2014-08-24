@@ -1,6 +1,6 @@
 opam-version: "1"
 maintainer: "dario.teixeira@nleyten.com"
-authors: ["Dario Teixeira <dario.teixeira@nleyten.com>"]
+authors: "Dario Teixeira <dario.teixeira@nleyten.com>"
 homepage: "http://litiom.forge.ocamlcore.org/"
 license: "LGPL-2.1 with OCaml linking exception"
 build: [
@@ -9,8 +9,9 @@ build: [
   [make "doc"]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "litiom"]]
+remove: ["ocamlfind" "remove" "litiom"]
 depends: [
   "ocamlfind"
   "eliom" {>= "4"}
 ]
+libraries: "litiom"

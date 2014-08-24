@@ -5,5 +5,7 @@ build: [
   [make]
   [make "install"]
 ]
-depends: ["camlp4"
-          "core_extended" {= "109.14.00"}]
+depends: [
+  "camlp4"
+  "core_extended" {= "109.14.00"}
+]

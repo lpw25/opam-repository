@@ -5,5 +5,9 @@ build: [
   [make "build"]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "pa_where"]]
-depends: ["camlp4" "ocamlfind"]
+remove: ["ocamlfind" "remove" "pa_where"]
+depends: [
+  "camlp4"
+  "ocamlfind"
+]
+libraries: "pa_where"

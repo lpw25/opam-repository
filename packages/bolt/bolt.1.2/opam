@@ -5,7 +5,11 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "bolt"]]
-depends: ["ocamlfind" "camlp4"]
-patches: ["opam.patch"]
+remove: ["ocamlfind" "remove" "bolt"]
+depends: [
+  "ocamlfind"
+  "camlp4"
+]
+libraries: "bolt"
+patches: "opam.patch"
 ocaml-version: [= "3.12.1"]

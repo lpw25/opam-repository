@@ -6,15 +6,15 @@ build: [
   [make]
   [make "install"]
 ]
-build-doc: [
-  [make "doc"]
+build-doc: [make "doc"]
+remove: ["ocamlfind" "remove" "qfs"]
+depends: [
+  "ocamlfind"
+  "oasis"
 ]
-remove: [
-  ["ocamlfind" "remove" "qfs"]
-]
-depends: ["ocamlfind" "oasis"]
 depexts: [
   [["debian"] ["libboost-dev"]]
+  [["linux" "source"] ["https://gist.githubusercontent.com/ygrek/7bb217d6ab7b25a765b7/raw"]]
   [["ubuntu"] ["libboost-dev"]]
-  [["source" "linux"] ["https://gist.githubusercontent.com/ygrek/7bb217d6ab7b25a765b7/raw"]]
 ]
+libraries: "qfs"

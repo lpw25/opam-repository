@@ -15,9 +15,10 @@ build: [
   ["ocaml" "setup.ml" "-build"]
   ["ocaml" "setup.ml" "-install"]
 ]
-remove: [["ocamlfind" "remove" "archimedes"]]
+remove: ["ocamlfind" "remove" "archimedes"]
 depends: [
   "ocamlfind"
   "cairo2"
 ]
+libraries: "archimedes"
 ocaml-version: [= "3.12.1"]

@@ -4,5 +4,9 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "CamlGI"]]
-depends: ["ocamlfind" "camlp4"]
+remove: ["ocamlfind" "remove" "CamlGI"]
+depends: [
+  "ocamlfind"
+  "camlp4"
+]
+libraries: "CamlGI"

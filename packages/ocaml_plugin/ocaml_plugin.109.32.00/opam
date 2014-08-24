@@ -5,7 +5,7 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "ocaml_plugin"]]
+remove: ["ocamlfind" "remove" "ocaml_plugin"]
 depends: [
   "camlp4"
   "ocamlfind"
@@ -16,3 +16,4 @@ depends: [
   "fieldslib" {= "109.20.00"}
   "herelib"
 ]
+libraries: "ocaml_plugin"

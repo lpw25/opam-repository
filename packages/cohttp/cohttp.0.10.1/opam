@@ -8,7 +8,7 @@ build: [
   [make "PREFIX=%{prefix}%"]
   [make "PREFIX=%{prefix}%" "install"]
 ]
-remove: [["ocamlfind" "remove" "cohttp"]]
+remove: ["ocamlfind" "remove" "cohttp"]
 depends: [
   "ocamlfind"
   "re"
@@ -22,3 +22,4 @@ depopts: [
   "lwt" {>= "2.4.3"}
   ("lwt" {>= "2.4.3"} & "ssl")
 ]
+libraries: "cohttp"

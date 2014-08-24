@@ -8,9 +8,10 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "cdrom"]]
+remove: ["ocamlfind" "remove" "cdrom"]
 depends: [
   "ocamlfind"
   "obuild"
 ]
+libraries: "cdrom"
 os: ["linux"]

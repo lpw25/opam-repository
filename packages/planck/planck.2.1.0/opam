@@ -6,7 +6,7 @@ build: [
   ["ocaml" "setup.ml" "-build"]
   ["ocaml" "setup.ml" "-install"]
 ]
-remove: [["ocamlfind" "remove" "planck"]]
+remove: ["ocamlfind" "remove" "planck"]
 depends: [
   "ocamlfind"
   "sexplib" {>= "108.07.00"}
@@ -14,5 +14,6 @@ depends: [
   "omake"
   "pa_monad_custom"
 ]
+libraries: "planck"
 ocaml-version: [>= "4.00.1"]
 os: ["linux"]

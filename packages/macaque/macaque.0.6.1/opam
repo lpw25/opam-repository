@@ -4,9 +4,10 @@ build: [
   [make "-C" "src"]
   [make "-C" "src" "install"]
 ]
-remove: [["ocamlfind" "remove" "macaque"]]
+remove: ["ocamlfind" "remove" "macaque"]
 depends: [
   "ocamlfind"
   "pgocaml" {< "2.0"}
   "camlp4"
 ]
+libraries: "macaque"

@@ -5,9 +5,10 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "shcaml"]]
+remove: ["ocamlfind" "remove" "shcaml"]
 depends: [
   "ocamlfind"
   "pcre-ocaml"
 ]
+libraries: "shcaml"
 ocaml-version: [= "3.12.1"]

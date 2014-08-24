@@ -2,12 +2,10 @@ opam-version: "1"
 maintainer: "francois.berenger@inria.fr"
 homepage: "http://www.mpfr.org/"
 license: "LGPL"
-build: [["cc" "test.c" "-lgmp" "-lmpfr"]]
+build: ["cc" "test.c" "-lgmp" "-lmpfr"]
+depends: "conf-gmp"
 depexts: [
   [["debian"] ["libmpfr-dev"]]
+  [["homebrew" "osx"] ["mpfr"]]
   [["ubuntu"] ["libmpfr-dev"]]
-  [["osx" "homebrew"] ["mpfr"]]
-]
-depends: [
-  "conf-gmp"
 ]

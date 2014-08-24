@@ -16,3 +16,8 @@ depends: [
   "pcre-ocaml"
   "omake"
 ]
+libraries: [
+  "hydro"
+  "hydrogen"
+  "hydromon"
+]

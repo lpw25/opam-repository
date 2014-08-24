@@ -1,11 +1,8 @@
 opam-version: "1"
-name: "facebook-sdk"
-version: "0.3.1"
 maintainer: "dominic.price@nottingham.ac.uk"
+authors: "Dominic Price"
 homepage: "https://github.com/dominicjprice/facebook-sdk"
-authors: [ "Dominic Price" ]
 license: "GPL-3"
-ocaml-version: [ >= "4.01.0" ]
 build: [
   ["oasis" "setup"]
   ["./configure" "--prefix" prefix]
@@ -19,7 +16,7 @@ remove: [
 ]
 depends: [
   "calendar"
-  "cohttp" { >= "0.10.0" }
+  "cohttp" {>= "0.10.0"}
   "core"
   "csv"
   "lwt"
@@ -30,3 +27,8 @@ depends: [
   "tiny_json_conv"
   "uri"
 ]
+libraries: [
+  "facebook"
+  "types"
+]
+ocaml-version: [>= "4.01.0"]

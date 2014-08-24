@@ -4,7 +4,7 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "async_core"]]
+remove: ["ocamlfind" "remove" "async_core"]
 depends: [
   "camlp4"
   "ocamlfind"
@@ -14,3 +14,4 @@ depends: [
   "pa_ounit"
   "sexplib"
 ]
+libraries: "async_core"

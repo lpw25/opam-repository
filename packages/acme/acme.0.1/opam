@@ -1,15 +1,14 @@
 opam-version: "1"
 maintainer: "raphael.proust@cl.cam.ac.uk"
-authors: [ "Raphaël Proust" ]
+authors: "Raphaël Proust"
 license: "BSD"
 build: [
   [make]
   [make "install"]
 ]
-remove: [
-  [make "uninstall"]
-]
+remove: [make "uninstall"]
 depends: [
-  "ocamlfind" "ocaml9p"
+  "ocamlfind"
+  "ocaml9p"
 ]
-ocaml-version: [>="4.01.0"]
+ocaml-version: [>= "4.01.0"]

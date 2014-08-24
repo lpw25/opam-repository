@@ -5,5 +5,9 @@ build: [
   ["ocaml" "setup.ml" "-build"]
   ["ocaml" "setup.ml" "-install"]
 ]
-remove: [["ocamlfind" "remove" "ospec"]]
-depends: ["ocamlfind" "camlp4"]
+remove: ["ocamlfind" "remove" "ospec"]
+depends: [
+  "ocamlfind"
+  "camlp4"
+]
+libraries: "ospec"

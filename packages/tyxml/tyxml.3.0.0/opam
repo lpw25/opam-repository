@@ -4,10 +4,10 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [
-  ["ocamlfind" "remove" "tyxml"]
-]
+remove: ["ocamlfind" "remove" "tyxml"]
 depends: [
-  "ocamlfind" "camlp4"
+  "ocamlfind"
+  "camlp4"
 ]
+libraries: "tyxml"
 ocaml-version: [>= "3.12.1"]

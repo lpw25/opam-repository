@@ -46,6 +46,5 @@ Add opam emacs directory to your load-path by appending this to your .emacs:
   (setq merlin-command 'opam)
 
 Take a look at https://github.com/the-lambda-church/merlin for more information
-"
-  {success}
+" {success}
 ]

@@ -5,6 +5,7 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "tophide"]]
-depends: ["ocamlfind"]
+remove: ["ocamlfind" "remove" "tophide"]
+depends: "ocamlfind"
+libraries: "tophide"
 ocaml-version: [= "3.12.1"]

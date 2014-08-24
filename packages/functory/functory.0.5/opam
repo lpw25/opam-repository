@@ -11,5 +11,6 @@ build: [
   [make]
   [make "ocamlfind-install"]
 ]
-remove: [["ocamlfind" "remove" "functory"]]
-depends: ["ocamlfind"]
+remove: ["ocamlfind" "remove" "functory"]
+depends: "ocamlfind"
+libraries: "functory"

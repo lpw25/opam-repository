@@ -4,5 +4,5 @@ tags: [
   "org:mirage"
   "org:xapi-project"
 ]
-build: [[make "all"]]
-depends: ["ocamlfind"]
+build: [make "all"]
+depends: "ocamlfind"

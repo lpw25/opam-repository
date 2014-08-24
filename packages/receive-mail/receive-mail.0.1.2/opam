@@ -1,11 +1,8 @@
 opam-version: "1"
-name: "receive-mail"
-version: "0.1.2"
 maintainer: "dominic.price@nottingham.ac.uk"
+authors: "Dominic Price"
 homepage: "https://github.com/dominicjprice/receive-mail"
-authors: [ "Dominic Price" ]
 license: "GPL-3"
-ocaml-version: [ >= "4.01.0" ]
 build: [
   ["oasis" "setup"]
   ["./configure" "--prefix" prefix]
@@ -16,4 +13,13 @@ remove: [
   [make "uninstall"]
   ["ocamlfind" "remove" "smtpd"]
 ]
-depends: ["bolt" "core" "lwt" "oasis" "ocamlnet" "re"]
+depends: [
+  "bolt"
+  "core"
+  "lwt"
+  "oasis"
+  "ocamlnet"
+  "re"
+]
+libraries: "smtpd"
+ocaml-version: [>= "4.01.0"]

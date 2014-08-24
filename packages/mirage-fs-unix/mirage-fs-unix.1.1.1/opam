@@ -11,4 +11,5 @@ depends: [
   "lwt" {>= "2.4.3"}
   "mirage-types" {>= "1.1.0"}
 ]
+libraries: "mirage-fs-unix"
 ocaml-version: [>= "4.01.0"]

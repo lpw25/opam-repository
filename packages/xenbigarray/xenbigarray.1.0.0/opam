@@ -8,6 +8,7 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "bigarray"]]
-depends: ["ocamlfind"]
+remove: ["ocamlfind" "remove" "bigarray"]
+depends: "ocamlfind"
+libraries: "bigarray"
 available: [ocaml-version < "4.02.0"]

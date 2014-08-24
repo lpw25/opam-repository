@@ -5,7 +5,7 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "jenga"]]
+remove: ["ocamlfind" "remove" "jenga"]
 depends: [
   "camlp4"
   "sexplib" {= "109.17.00"}
@@ -20,3 +20,4 @@ depends: [
   "ocaml_plugin" {= "109.17.00"}
   "pcre-ocaml"
 ]
+libraries: "jenga"

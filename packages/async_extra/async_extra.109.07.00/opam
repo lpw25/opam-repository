@@ -4,10 +4,11 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "async_extra"]]
+remove: ["ocamlfind" "remove" "async_extra"]
 depends: [
   "camlp4"
   "async_core" {= "109.07.00"}
   "async_unix" {= "109.07.00"}
 ]
-patches: ["disable_warn_error.patch"]
+libraries: "async_extra"
+patches: "disable_warn_error.patch"

@@ -19,3 +19,9 @@ depends: [
   "ulex"
   "ocaml-inifiles"
 ]
+libraries: [
+  "wd-daemon-session"
+  "wd-inmemory-session"
+  "wd-xmlcompiler"
+  "wdialog"
+]

@@ -1,14 +1,10 @@
 opam-version: "1"
 maintainer: "seb@mondet.org"
 homepage: "https://bitbucket.org/smondet/nonstd"
+build: [
+  ["ocaml" "please.ml" "build"]
+  ["ocaml" "please.ml" "install"]
+]
+remove: ["ocaml" "please.ml" "uninstall"]
+depends: "ocamlfind"
 ocaml-version: [>= "4.00.0"]
-build:
-    [
-    ["ocaml" "please.ml" "build"]
-    ["ocaml" "please.ml" "install"]
-    ]
-remove:
-    [
-    ["ocaml" "please.ml" "uninstall"]
-    ]
-depends: ["ocamlfind"]

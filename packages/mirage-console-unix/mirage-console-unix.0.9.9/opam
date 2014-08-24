@@ -11,6 +11,7 @@ build: [
 remove: ["ocamlfind" "remove" "mirage-console-unix"]
 depends: [
   "ocamlfind"
-  "mirage-types" {="0.3.0"}
-  "mirage-unix" {>="0.9.9"}
+  "mirage-types" {= "0.3.0"}
+  "mirage-unix" {>= "0.9.9"}
 ]
+libraries: "mirage-console-unix"

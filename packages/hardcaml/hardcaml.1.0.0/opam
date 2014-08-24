@@ -5,13 +5,11 @@ build: [
   [make "all"]
   [make "install"]
 ]
-remove: [
-  [make "uninstall"]
-]
+remove: [make "uninstall"]
 depends: [
   "ocamlfind"
   "camlp4"
   "lwt"
   "js_of_ocaml"
 ]
-ocaml-version: [ >= "4.01.0" ]
+ocaml-version: [>= "4.01.0"]

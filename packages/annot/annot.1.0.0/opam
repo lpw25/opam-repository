@@ -5,7 +5,7 @@ authors: [
   "Anil Madhavapeddy"
 ]
 homepage: "https://github.com/avsm/ocaml-annot"
-tags: ["org:ocamllabs"]
+tags: "org:ocamllabs"
 build: [
   ["./configure" "--prefix=%{prefix}%"]
   [make]

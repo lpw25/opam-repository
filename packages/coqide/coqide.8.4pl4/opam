@@ -11,6 +11,4 @@ depends: [
   "coq" {= "8.4pl4"}
   "lablgtk"
 ]
-patches: [
-  "MAKEFILE_remove_useless_for_coqide.patch"
-]
+patches: "MAKEFILE_remove_useless_for_coqide.patch"

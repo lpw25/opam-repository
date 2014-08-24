@@ -8,12 +8,13 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "websocket"]]
+remove: ["ocamlfind" "remove" "websocket"]
 depends: [
   "lwt"
   "cryptokit"
   "cohttp" {>= "0.10.0"}
   "ssl"
-  "ocplib-endian" {>="0.4"}
+  "ocplib-endian" {>= "0.4"}
 ]
-ocaml-version: [>="4.00.0"]
+libraries: "websocket"
+ocaml-version: [>= "4.00.0"]

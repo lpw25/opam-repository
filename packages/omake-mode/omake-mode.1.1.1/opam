@@ -1,6 +1,5 @@
 opam-version: "1"
 maintainer: "seanmcl@gmail.com"
-ocaml-version: [>= "4.00.0"]
 build: [
   ["mkdir" "-p" "%{prefix}%/share/omake-mode"]
   ["ocaml" "setup.ml" "-configure" "--prefix" "%{prefix}%"]
@@ -9,8 +8,8 @@ build: [
   ["sh" "-c" "cd %{prefix}%/share/omake-mode && make"]
 ]
 remove: [
-  [ "rm" "-rf" "%{share}%/omake-mode" ]
-  [ "rm" "-f" "%{bin}%/omake_server" ]
+  ["rm" "-rf" "%{share}%/omake-mode"]
+  ["rm" "-f" "%{bin}%/omake_server"]
 ]
 depends: [
   "ocamlfind"
@@ -22,3 +21,4 @@ depends: [
   "omake"
   "ounit"
 ]
+ocaml-version: [>= "4.00.0"]

@@ -1,6 +1,6 @@
 opam-version: "1"
 maintainer: "dario.teixeira@nleyten.com"
-authors: ["Richard W.M. Jones <rich@annexia.org>"]
+authors: "Richard W.M. Jones <rich@annexia.org>"
 homepage: "http://pgocaml.forge.ocamlcore.org/"
 license: "LGPL-2.0 with OCaml linking exception"
 build: [
@@ -8,7 +8,7 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "pgocaml"]]
+remove: ["ocamlfind" "remove" "pgocaml"]
 depends: [
   "ocamlfind"
   "batteries" {>= "2.0.0"}
@@ -17,3 +17,4 @@ depends: [
   "csv"
   "camlp4"
 ]
+libraries: "pgocaml"

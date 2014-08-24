@@ -5,9 +5,10 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "lame"]]
-depends: ["ocamlfind"]
+remove: ["ocamlfind" "remove" "lame"]
+depends: "ocamlfind"
 depexts: [
-  [ ["debian"] [ "libmp3lame-dev" ] ]
-  [ ["ubuntu"] [ "libmp3lame-dev" ] ]
- ]
+  [["debian"] ["libmp3lame-dev"]]
+  [["ubuntu"] ["libmp3lame-dev"]]
+]
+libraries: "lame"

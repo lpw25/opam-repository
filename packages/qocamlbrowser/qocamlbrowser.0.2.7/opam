@@ -1,13 +1,13 @@
 opam-version: "1"
 maintainer: "kakadu.hafanana@gmail.com"
-ocaml-version: [>= "4.02.0"]
 build: [
   ["./configure"]
   [make]
-  [make "install" "PREFIX=%{prefix}%" ]
+  [make "install" "PREFIX=%{prefix}%"]
 ]
-remove: [
-  [make "uninstall"]
+remove: [make "uninstall"]
+depends: [
+  "lablqt" {>= "0.3"}
+  "conf-qt" {>= "5.2.1"}
 ]
-depends: [ "lablqt" {>= "0.3"} "conf-qt" {>= "5.2.1"} ]
-
+ocaml-version: [>= "4.02.0"]

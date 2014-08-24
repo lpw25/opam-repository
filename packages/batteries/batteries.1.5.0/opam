@@ -13,4 +13,8 @@ depends: [
   "ocamlfind"
   "camomile"
 ]
-ocaml-version: [<="4.00.1"]
+libraries: [
+  "batteries"
+  "estring"
+]
+ocaml-version: [<= "4.00.1"]

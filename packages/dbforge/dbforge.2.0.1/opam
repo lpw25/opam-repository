@@ -12,7 +12,7 @@ build: [
   [make "all"]
   [make "install-lib"]
 ]
-remove: [[make "uninstall-lib"]]
+remove: [make "uninstall-lib"]
 depends: [
   "ocamlfind"
   "config-file" {>= "1.1"}

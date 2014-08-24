@@ -5,5 +5,5 @@ build: [
   [make "opt"]
   [make "install" "PREFIX=%{prefix}%"]
 ]
-patches: ["opam.patch"]
-depends: ["ocamlfind"]
+depends: "ocamlfind"
+patches: "opam.patch"

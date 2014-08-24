@@ -10,5 +10,6 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "combine"]]
-depends: ["menhir"]
+remove: ["ocamlfind" "remove" "combine"]
+depends: "menhir"
+libraries: "combine"

@@ -15,8 +15,7 @@ depends: [
   "ocp-build" {>= "1.99.6-beta"}
   "cmdliner"
 ]
-post-messages: [
-  "OCP-INDENT installed.
+post-messages: "OCP-INDENT installed.
 
 To use it from emacs, add the following to your .emacs:
   (add-to-list 'load-path (concat
@@ -27,6 +26,4 @@ To use it from emacs, add the following to your .emacs:
 
 To use it from Vim, add to your .vimrc:
   autocmd FileType ocaml source
-    (system(\"opam config var share\").\"/emacs/site-lisp/ocp-indent.vim\")"
-  {success}
-]
+    (system(\"opam config var share\").\"/emacs/site-lisp/ocp-indent.vim\")" {success}

@@ -1,5 +1,8 @@
 opam-version: "1"
 maintainer: "sylvain.pogodalla@inria.fr"
+authors: "Sylvain Pogodalla"
+homepage: "http://acg.gforge.inria.fr/"
+license: "CeCILL"
 build: [
   ["./configure" "--prefix=%{prefix}%"]
   [make "all"]
@@ -13,8 +16,4 @@ depends: [
   "dypgen"
   "bolt"
 ]
-
-ocaml-version: [ >= "4.00.0" ]
-homepage: "http://acg.gforge.inria.fr/"
-license: "CeCILL"
-authors: ["Sylvain Pogodalla"]
+ocaml-version: [>= "4.00.0"]

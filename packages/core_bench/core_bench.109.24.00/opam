@@ -4,7 +4,7 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "core_bench"]]
+remove: ["ocamlfind" "remove" "core_bench"]
 depends: [
   "camlp4"
   "core" {= "109.24.00"}
@@ -13,3 +13,4 @@ depends: [
   "comparelib" {>= "109.15.00" & <= "109.27.00"}
   "textutils" {= "109.24.00"}
 ]
+libraries: "core_bench"

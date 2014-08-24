@@ -6,10 +6,10 @@ authors: [
 ]
 homepage: "http://www.pcre.org/"
 license: "BSD-3-Clause"
-build: [["pkg-config" "libpcre"]]
+build: ["pkg-config" "libpcre"]
 depexts: [
   [["debian"] ["libpcre3-dev"]]
+  [["homebrew" "osx"] ["pcre"]]
   [["mageia"] ["libpcre-devel"]]
   [["ubuntu"] ["libpcre3-dev"]]
-  [["osx" "homebrew"] ["pcre"]]
 ]

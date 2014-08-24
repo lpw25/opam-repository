@@ -9,5 +9,6 @@ build: [
   [make "install"]
 ]
 remove: ["ocamlfind" "remove" "mirage-types"]
-depends: ["ocamlfind"]
-ocaml-version: [>="4.00.0"]
+depends: "ocamlfind"
+libraries: "mirage-types"
+ocaml-version: [>= "4.00.0"]

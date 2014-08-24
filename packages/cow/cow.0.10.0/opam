@@ -9,7 +9,7 @@ build: [
   [make "all"]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "cow"]]
+remove: ["ocamlfind" "remove" "cow"]
 depends: [
   "ocamlfind"
   "dyntype" {>= "0.9.0"}
@@ -22,3 +22,4 @@ depends: [
   "omd" {>= "0.8.2" & < "1.0.0"}
   "ezjsonm"
 ]
+libraries: "cow"

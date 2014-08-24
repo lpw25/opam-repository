@@ -5,4 +5,4 @@ build: [
   [make]
   [make "install"]
 ]
-depends: ["camlp4"]
+depends: "camlp4"

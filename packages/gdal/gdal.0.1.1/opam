@@ -1,8 +1,8 @@
 opam-version: "1"
 maintainer: "hez@0ok.org"
-authors: [ "Hezekiah M. Carty <hez@0ok.org>" ]
-license: "MIT"
+authors: "Hezekiah M. Carty <hez@0ok.org>"
 homepage: "https://github.com/hcarty/ocaml-gdal"
+license: "MIT"
 build: [
   ["ocaml" "setup.ml" "-configure" "--prefix" prefix]
   ["ocaml" "setup.ml" "-build"]
@@ -19,5 +19,9 @@ depends: [
 depexts: [
   [["debian"] ["libgdal-dev"]]
   [["ubuntu"] ["libgdal-dev"]]
+]
+libraries: [
+  "gdal"
+  "ogr"
 ]
 ocaml-version: [>= "4.01.0"]

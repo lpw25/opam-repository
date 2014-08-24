@@ -4,10 +4,11 @@ build: [
   [make "all" "POSTGRES_INCLUDE=-I /usr/include/postgresql"]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "postgres"]]
-depends: ["ocamlfind"]
-patches: ["opam.patch"]
+remove: ["ocamlfind" "remove" "postgres"]
+depends: "ocamlfind"
 depexts: [
-  [["ubuntu"] ["libpq-dev"]]
   [["debian"] ["libpq-dev"]]
+  [["ubuntu"] ["libpq-dev"]]
 ]
+libraries: "postgres"
+patches: "opam.patch"

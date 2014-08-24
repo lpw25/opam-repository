@@ -5,5 +5,4 @@ build: [
   [make "world" "states"]
   [make "install"]
 ]
-depends: ["camlp5"]
-patches: []
+depends: "camlp5"

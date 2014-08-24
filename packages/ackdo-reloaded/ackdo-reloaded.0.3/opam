@@ -4,7 +4,7 @@ build: [
   [make build]
   [make "opaminstall" "BINDIR=%{bin}%"]
 ]
-remove: [[make "opamuninstall"]]
+remove: [make "opamuninstall"]
 depends: [
   "core"
   "sexplib"

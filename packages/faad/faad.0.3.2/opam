@@ -5,10 +5,10 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "faad"]]
-depends: ["ocamlfind"]
+remove: ["ocamlfind" "remove" "faad"]
+depends: "ocamlfind"
 depexts: [
   [["debian"] ["libfaad-dev"]]
   [["ubuntu"] ["libfaad-dev"]]
 ]
-
+libraries: "faad"

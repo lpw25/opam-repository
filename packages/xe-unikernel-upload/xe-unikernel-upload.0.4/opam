@@ -4,9 +4,7 @@ build: [
   ["make"]
   ["make" "install" "BINDIR=%{bin}%" "MANDIR=%{man}%/man1"]
 ]
-remove: [
-  ["make" "uninstall" "BINDIR=%{bin}%" "MANDIR=%{man}%/man1"]
-]
+remove: ["make" "uninstall" "BINDIR=%{bin}%" "MANDIR=%{man}%/man1"]
 depends: [
   "ocamlfind"
   "cmdliner"

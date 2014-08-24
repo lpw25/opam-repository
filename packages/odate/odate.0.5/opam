@@ -1,21 +1,20 @@
 opam-version: "1"
 maintainer: "hugo.heuzard@gmail.com"
-authors: [ "Hugo Heuzard" ]
-license: "LGPL-2.1 with OCaml linking exception"
+authors: "Hugo Heuzard"
 homepage: "https://github.com/hhugo/odate"
+license: "LGPL-2.1 with OCaml linking exception"
 build: [
   ["oasis" "setup"]
   ["ocaml" "setup.ml" "-configure" "--prefix" prefix]
   ["ocaml" "setup.ml" "-build"]
   ["ocaml" "setup.ml" "-install"]
 ]
-remove: [
-  ["ocamlfind" "remove" "odate"]
-]
-build-doc: [ "ocaml" "setup.ml" "-doc" ]
+build-doc: ["ocaml" "setup.ml" "-doc"]
+remove: ["ocamlfind" "remove" "odate"]
 depends: [
   "oasis"
   "ocamlfind"
   "menhir"
 ]
-ocaml-version: [ >= "4.00.0" ]
+libraries: "odate"
+ocaml-version: [>= "4.00.0"]

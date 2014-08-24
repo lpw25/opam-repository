@@ -4,14 +4,15 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "core_extended"]]
+remove: ["ocamlfind" "remove" "core_extended"]
 depends: [
   "camlp4"
   "pcre-ocaml"
   "core" {= "109.07.00"}
 ]
+libraries: "core_extended"
 patches: [
   "fix_META.patch"
   "disable_warn_error.patch"
 ]
-os: [!"openbsd"]
+os: [! "openbsd"]

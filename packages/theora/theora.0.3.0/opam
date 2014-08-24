@@ -5,12 +5,13 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "theora"]]
+remove: ["ocamlfind" "remove" "theora"]
 depends: [
   "ocamlfind"
   "ogg"
 ]
 depexts: [
-  [["ubuntu"] ["libtheora-dev"]]
   [["debian"] ["libtheora-dev"]]
+  [["ubuntu"] ["libtheora-dev"]]
 ]
+libraries: "theora"

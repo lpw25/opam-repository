@@ -8,5 +8,9 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "cstruct"]]
-depends: ["ocamlfind" "camlp4"]
+remove: ["ocamlfind" "remove" "cstruct"]
+depends: [
+  "ocamlfind"
+  "camlp4"
+]
+libraries: "cstruct"

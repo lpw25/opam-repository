@@ -7,13 +7,8 @@ build: [
   ["ocaml" "setup.ml" "-build"]
   ["ocaml" "setup.ml" "-install"]
 ]
-remove: [
-  ["ocamlfind" "remove" "WiringPi"]
-]
-depends: [
-  "ocamlfind"
-]
+remove: ["ocamlfind" "remove" "WiringPi"]
+depends: "ocamlfind"
+depexts: [["linux" "source"] ["https://gist.github.com/Leonidas-from-XIV/a1a7315ac01f7fbee3f0/raw"]]
+libraries: "WiringPi"
 os: ["linux"]
-depexts: [
-  [["source" "linux"] ["https://gist.github.com/Leonidas-from-XIV/a1a7315ac01f7fbee3f0/raw"]]
-]

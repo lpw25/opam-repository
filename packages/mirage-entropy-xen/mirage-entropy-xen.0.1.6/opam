@@ -4,9 +4,7 @@ build: [
   [make "xen-build"]
   [make "xen-install"]
 ]
-remove: [
-  ["ocamlfind" "remove" "mirage-entropy-xen"]
-]
+remove: ["ocamlfind" "remove" "mirage-entropy-xen"]
 depends: [
   "ocamlfind"
   "cstruct" {>= "1.3.0"}
@@ -15,4 +13,5 @@ depends: [
   "ipaddr"
   "mirage-types" {>= "1.2.0"}
 ]
-ocaml-version: [>="4.01.0"]
+libraries: "mirage-entropy-xen"
+ocaml-version: [>= "4.01.0"]

@@ -9,4 +9,8 @@ build: [
   [make "unix-install"]
 ]
 remove: ["ocamlfind" "remove" "mirage-clock-unix"]
-depends: ["ocamlfind" "cstruct"]
+depends: [
+  "ocamlfind"
+  "cstruct"
+]
+libraries: "mirage-clock-unix"

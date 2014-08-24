@@ -4,9 +4,7 @@ build: [
   [make]
   [make "install" "BINDIR=%{bin}%"]
 ]
-remove: [
-  [make "uninstall" "BINDIR=%{bin}%"]
-]
+remove: [make "uninstall" "BINDIR=%{bin}%"]
 depends: [
   "ocamlfind"
   "lwt"
@@ -18,4 +16,4 @@ depends: [
   "io-page"
   "cmdliner"
 ]
-ocaml-version: [>="4.00.0"]
+ocaml-version: [>= "4.00.0"]

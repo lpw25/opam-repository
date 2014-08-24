@@ -7,7 +7,7 @@ authors: [
 ]
 homepage: "http://www.lua.org/"
 license: "MIT"
-build: [["pkg-config" "lua"]]
+build: ["pkg-config" "lua"]
 depexts: [
   [["debian"] ["liblua5.2-dev"]]
   [["mageia"] ["liblua-devel"]]

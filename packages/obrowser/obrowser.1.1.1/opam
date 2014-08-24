@@ -4,10 +4,11 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "obrowser"]]
+remove: ["ocamlfind" "remove" "obrowser"]
 depends: [
   "ocamlfind"
   "menhir"
   "lwt"
 ]
+libraries: "obrowser"
 ocaml-version: [= "3.12.1"]

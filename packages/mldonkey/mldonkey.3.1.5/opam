@@ -7,8 +7,8 @@ build: [
   [make]
   [make "install"]
 ]
-ocaml-version: [>= "3.10.1"]
 depexts: [
-  [ ["ubuntu"] ["zlib1g-dev"] ]
-  [ ["debian"] ["zlib1g-dev"] ]
+  [["debian"] ["zlib1g-dev"]]
+  [["ubuntu"] ["zlib1g-dev"]]
 ]
+ocaml-version: [>= "3.10.1"]

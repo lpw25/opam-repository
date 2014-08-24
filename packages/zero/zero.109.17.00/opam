@@ -4,7 +4,7 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "zero"]]
+remove: ["ocamlfind" "remove" "zero"]
 depends: [
   "camlp4"
   "core" {>= "109.17.00" & <= "109.18.00"}
@@ -12,3 +12,4 @@ depends: [
   "fieldslib" {= "109.15.00"}
   "pa_ounit" {>= "109.15.00" & <= "109.18.00"}
 ]
+libraries: "zero"

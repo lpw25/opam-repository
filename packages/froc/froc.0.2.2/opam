@@ -9,4 +9,7 @@ remove: [
   ["./configure"]
   [make "uninstall"]
 ]
-depends: ["delimcc" "camlp4"]
+depends: [
+  "delimcc"
+  "camlp4"
+]

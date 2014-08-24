@@ -6,9 +6,10 @@ build: [
   [make]
   [make "find_install"]
 ]
-remove: [["ocamlfind" "remove" "magick"]]
-depends: ["ocamlfind"]
+remove: ["ocamlfind" "remove" "magick"]
+depends: "ocamlfind"
 depexts: [
   [["debian"] ["libgraphicsmagick1-dev" "libmagickcore-dev"]]
   [["ubuntu"] ["libmagickcore-dev"]]
 ]
+libraries: "magick"

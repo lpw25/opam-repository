@@ -1,19 +1,21 @@
 opam-version: "1"
 maintainer: "lebotlan@users.forge.ocamlcore.org"
-authors: [ "D. Le Botlan" ]
-license: "GPL-3"
+authors: "D. Le Botlan"
 homepage: "http://cryptodbm.forge.ocamlcore.org/"
+license: "GPL-3"
 build: [
   ["ocaml" "setup.ml" "-configure" "--prefix" prefix]
   ["ocaml" "setup.ml" "-build"]
   ["ocaml" "setup.ml" "-install"]
 ]
-remove: [
-  ["ocamlfind" "remove" "cryptodbm"]
-]
-build-doc: [ "ocaml" "setup.ml" "-doc" ]
+build-doc: ["ocaml" "setup.ml" "-doc"]
+remove: ["ocamlfind" "remove" "cryptodbm"]
 depends: [
   ("cryptokit" | "cryptokit-sha512")
-  "ocamlfind" "exenum" "dbm" "fileutils"
+  "ocamlfind"
+  "exenum"
+  "dbm"
+  "fileutils"
 ]
-ocaml-version: [ >= "4.01.0" ]
+libraries: "cryptodbm"
+ocaml-version: [>= "4.01.0"]

@@ -5,13 +5,13 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "speex"]]
+remove: ["ocamlfind" "remove" "speex"]
 depends: [
   "ocamlfind"
   "ogg"
 ]
 depexts: [
-  [["ubuntu"] ["libspeex-dev"]]
   [["debian"] ["libspeex-dev"]]
+  [["ubuntu"] ["libspeex-dev"]]
 ]
-
+libraries: "speex"

@@ -1,11 +1,15 @@
 opam-version: "1"
 maintainer: "gwenael.delaval@inria.fr"
-author: "Gwenaël Delaval"
+authors: "Gwenaël Delaval"
 homepage: "http://bzr.inria.fr"
 build: [
-   ["./configure" "--prefix" prefix]
-   [make]
-   [make "install"]
+  ["./configure" "--prefix" prefix]
+  [make]
+  [make "install"]
 ]
-depends: ["ocamlfind" "menhir" "ocamlgraph"]
-depopts: ["lablgtk"]
+depends: [
+  "ocamlfind"
+  "menhir"
+  "ocamlgraph"
+]
+depopts: "lablgtk"

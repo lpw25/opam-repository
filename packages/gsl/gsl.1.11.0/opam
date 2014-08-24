@@ -11,8 +11,9 @@ build: [
   ["ocaml" "setup.ml" "-build"]
   ["ocaml" "setup.ml" "-install"]
 ]
-build-doc: [["ocaml" "setup.ml" "-doc"]]
-remove: [["ocamlfind" "remove" "gsl"]]
-depends: ["ocamlfind"]
-conflicts: ["ocamlgsl" {= "0.6.0"}]
+build-doc: ["ocaml" "setup.ml" "-doc"]
+remove: ["ocamlfind" "remove" "gsl"]
+depends: "ocamlfind"
+conflicts: "ocamlgsl" {= "0.6.0"}
+libraries: "gsl"
 ocaml-version: [>= "3.12"]

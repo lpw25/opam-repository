@@ -16,5 +16,9 @@ build: [
   [make "build"]
   [make "install"]
 ]
-remove: [["ocamlfind" "remove" "ipaddr"]]
-depends: ["ocamlfind" "sexplib"]
+remove: ["ocamlfind" "remove" "ipaddr"]
+depends: [
+  "ocamlfind"
+  "sexplib"
+]
+libraries: "ipaddr"
